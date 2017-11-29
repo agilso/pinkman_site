@@ -1,0 +1,10 @@
+@import '../colors';
+
+hr {
+  display: block;
+  clear: both;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid $line_color;
+}

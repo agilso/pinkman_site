@@ -1,0 +1,47 @@
+@import '../mixins';
+@import '../colors';
+
+.sector{
+  @include box_sizing;
+  overflow: hidden;
+  clear: both;
+  width: 100%;
+  height: auto;
+  &.space {
+    margin: 30px auto;
+    &.xs{
+      margin: 10px auto;
+    }
+    &.sm{
+      margin: 20px auto;
+    }
+    // &.md{
+    //   margin: 30px auto;
+    // }
+    &.lg{
+      margin: 40px auto;
+    }
+    &.xl{
+      margin: 50px auto;
+    }
+  }
+  &.breathe{
+    padding: 30px 10px;
+    &.xs{
+      padding: 10px 10px;
+    }
+    &.sm{
+      padding: 20px 10px;
+    }
+    // &.md{
+    //   padding: 30px 10px;
+    // }
+    &.lg{
+      padding: 40px 10px;
+    }
+    &.xl{
+      padding: 50px 10px;
+    }
+  }
+  
+}
