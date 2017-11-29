@@ -1,0 +1,1 @@
+class window.AppCollection extends Pinkman.collection
