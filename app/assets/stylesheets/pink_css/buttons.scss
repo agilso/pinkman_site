@@ -1,0 +1,51 @@
+@import '../colors';
+@import '../mixins';
+
+button.ui, .button {
+  overflow: hidden;
+  padding: 10px;
+  background-color: $light_grey;
+  border: none;
+  &.xs {
+    font-size: 0.8em;
+    padding: 5px;
+  }
+  &.sm, &.small{
+    font-size: 0.9em;
+    padding: 7px;
+  }
+  &.lg, &.big{
+    font-size: 1.5em;
+    padding: 20px;
+  }
+  &.xl, &.huge{
+    font-size: 2.5em;
+    padding: 40px;
+  }
+  &.primary{
+    background-color: $primary_color;
+    color: white;
+  }
+  &.secondary{
+    background-color: $secondary_color;
+    color: white;
+  }
+}
+
+.button{
+  overflow: hidden;
+  .hidden{
+    display: none;
+  }
+  .visible{
+    display: inline-block;
+  }
+  &:hover{
+    .hidden{
+      display: inline-block;
+    }
+    .visible{
+      display: none;
+    }
+  }
+}
