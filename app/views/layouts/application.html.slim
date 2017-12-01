@@ -1,15 +1,17 @@
 doctype html
 html
   head
+    / style @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900')
+    link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet"
     title Pinkman
     / meta name="keywords" content="template language"
     / meta name="author" content=author
-    == csrf_meta_tags 
+    == csrf_meta_tags
 
     == stylesheet_link_tag    'application', media: 'all'
     == javascript_include_tag 'application'
-    
+
   body
     #content-area = yield
-  
+
   = load_templates

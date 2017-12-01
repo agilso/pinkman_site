@@ -3,14 +3,36 @@
 
 html, body{
   font-size: $default_font_size;
+  font-family: 'Roboto', sans-serif;
+  color: $carbon;
 }
 
 h1{
   font-size: 3em;
 }
 
+h1,h2,h3,h4,h5,h6{
+  &.subline{
+    padding: 0 0 15px 0;
+    border-bottom: 1px solid;
+    border-color: $light_grey;
+  }
+  &.blue{
+    color: $blue_site;
+  }
+}
+
+
 h2{
   font-size: 2.5em;
+  &.subline{
+    padding: 0 0 15px 0;
+    border-bottom: 1px solid;
+    border-color: $light_grey;
+  }
+  &.blue{
+    color: $blue_site;
+  }
 }
 
 h3{
@@ -35,4 +57,10 @@ small{
 
 .centralized, .center{
   &,* {text-align: center;}
+}
+
+
+
+p{
+  font-size: 
 }

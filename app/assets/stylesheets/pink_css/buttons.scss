@@ -6,6 +6,7 @@ button.ui, .button {
   padding: 10px;
   background-color: $light_grey;
   border: none;
+  border-radius: 5px;
   &.xs {
     font-size: 0.8em;
     padding: 5px;
