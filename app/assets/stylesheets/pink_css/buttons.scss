@@ -3,34 +3,51 @@
 
 button.ui, .button,{
   overflow: hidden;
-  padding: 10px;
-  background-color: $light_grey;
+  padding: 10px 22px;
+  background-color: $carbon;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
+  margin: 0 10px 0 0;
+  color: $snow;
   &.xs {
     font-size: 0.8em;
-    padding: 5px;
+    padding: 5px 10px;
   }
   &.sm, &.small{
     font-size: 0.9em;
-    padding: 7px;
+    padding: 7px 17px;
   }
   &.lg, &.big{
     font-size: 1.5em;
-    padding: 20px;
+    padding: 12px 30px;
   }
   &.xl, &.huge{
     font-size: 2.5em;
-    padding: 40px;
+    padding: 20px 40px;
   }
   &.primary{
-    background-color: $primary_color;
+    background-color: $blue_site;
     color: white;
+    &:hover {
+      background-color: darken($blue_site, 10%);
+    }
+
+    &:active {
+      background-color: lighten($blue_site, 10%);
+    }
   }
   &.secondary{
     background-color: $secondary_color;
     color: white;
   }
+  &:hover {
+    background-color: darken($carbon, 10%);
+  }
+
+  &:active {
+    background-color: lighten($carbon, 10%);
+  }
+
 }
 
 .button{

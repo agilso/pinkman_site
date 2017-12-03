@@ -4,8 +4,75 @@
   background-color: $light_grey;
 }
 
-.topo{
+// _____________________________YURI
+
+.bg-white{
+  background-color: #fff;
+}
+.bg-snow{
+  background-color: $snow;
+}
+.bg-light-grey{
+  background-color: $light_grey;
+}
+.bg-medium-grey{
+  background-color: $medium_grey;
+}
+.bg-blue-site{
+  background-color: $blue_site;
+}
+.bg-carbon{
   background-color: $carbon;
-  color: white;
-  border-radius: 5px 5px 0 0;
+}
+.bg-sucess{
+  background-color: $sucess;
+}
+.bg-warning{
+  background-color: $warning;
+}
+.bg-danger{
+  background-color: $danger;
+}
+
+.circle{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px;
+  text-align: center;
+  color: $snow;
+}
+.flex-centralized {
+  display: flex;
+  justify-content: center;
+}
+
+.explanation{
+  overflow: hidden;
+  padding: 15px 10px;
+  background-color: $snow;
+  border: solid 1px $light_grey;
+  border-radius: 4px;
+  margin: 40px 0;
+  color: $medium_grey;
+  text-align: center;
+}
+
+.example-title{
+  overflow: hidden;
+  padding: 15px 10px;
+  background-color: $carbon;
+  border: none;
+  border-radius: 4px 4px 0 0;
+  color: $snow;
+}
+
+.box-code{
+  overflow: hidden;
+  padding: 15px 10px;
+  background-color: $snow;
+  border: none;
+  border-radius: 0 0 4px 4px;
+  color: $carbon;
+  height: auto;
 }

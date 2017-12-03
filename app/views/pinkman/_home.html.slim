@@ -2,125 +2,192 @@
 
   .sector.breathe
     section.container
-      h2.blue.subline Botões
+      h2.blue.subline Cores
       section
-        h3.space Padrão
-        p Esse é um botão padrão.
-        button.ui.lg.blue padrão
-        / .explanation para usar o bota oea e.....
-        .box-code cõdigo
+        h3.space.top Paleta de cores
+        p Escolha uma paleta de cores para auxilinar em seu projeto
+        .container.flex-centralized
+          .circle.bg-snow
+          .circle.bg-light-grey
+          .circle.bg-medium-grey
+          .circle.bg-blue-site
+          .circle.bg-carbon
+        .explanation Definir suas cores em varáveis irá auxiliar em seu projeto e quando precisar alterar suas cores.
+        .h5.example-title Exemplo - código
+        .box-code
+          p.space.xs <b>$color1: #111111;</b> - .bg-color1{ background-color: $color1;} - < div class="bg-color1" > < /div > <br/>
+          p.space.xs <b>$color2: #222222;</b> - .bg-color2{ background-color: $color2;} - < div class="bg-color2" > < /div > <br/>
+          p.space.xs <b>$color3: #333333;</b> - .bg-color3{ background-color: $color3;} - < div class="bg-color3" > < /div > <br/>
+          p.space.xs <b>$color4: #444444;</b> - .bg-color4{ background-color: $color4;} - < div class="bg-color4" > < /div > <br/>
+          p.space.xs <b>$color5: #555555;</b> - .bg-color5{ background-color: $color5;} - < div class="bg-color5" > < /div > <br/>
 
-      section
-        h3.grey Com Ícone
+      .section.breathe.xl
+        h3.space.top Cores de alerta
+        p Cores de alerta para auxiliar com informações.
+        .container.flex-centralized
+          .circle.bg-sucess.text-center
+          .circle.bg-warning
+          .circle.bg-danger
+        .explanation Cores de alerta irão ajudar para enfatizar algo ao usuário: <b> Sucesso  |  Atenção  |  Obrigatório </b>
+        .h5.example-title Exemplo - código
+        .box-code
+          p.space.xs <b>$sucess: #2ecc71;</b> - .bg-sucess{ background-color: $sucess;} - < div class="bg-sucess" > < /div > <br/>
+          p.space.xs <b>$warning: #f1c40f;</b> - .bg-warning{ background-color: $warning;} - < div class="bg-warning" > < /div > <br/>
+          p.space.xs <b>$danger: #e74c3c;</b> - .bg-danger{ background-color: $danger;} - < div class="bg-danger" > < /div > <br/>
 
   .sector.breathe
-    .container
-      .topo.centralized
-        h2 Buttons
-      .small.centralized Artigo com modelos de botões.
-      hr/
-      .sector.space.breathe.sm
-        .row
-          .two.columns
-            button.ui.xs Mini
-          .two.columns
-            button.ui.small Peq
-          .two.columns
-            button.ui Padrão
-          .two.columns
-            button.ui.big Grande
-          .two.columns
-            button.ui.huge Gigante
-          .two.columns
-            button.ui.primary Cor 1
-            button.ui.secondary Cor 2
+    section.container
+      h2.blue.subline Botões
+      section
+        h3.space.top Tamanhos
+        p Esses são os botões e seus diferentes tamanhos.
+        .space
+          button.ui.xs Pititico
+          button.ui.sm Pequeno
+          button.ui Padrão
+          button.ui.lg Grande
+          button.ui.xl Muito Grande
 
-          .button.animated
-            .visible ISSO DAQUI NO INICIO
-            .hidden ISSO DAQUI DEPOIS
-      .centralized
-        button.ui.hige teste
+        h5.example-title Exemplo - código
+        .box-code
+          p.space.xs < button <b>class="ui" class="xs"</b> > Pititico < /button > </br>
+          p.space.xs < button <b>class="ui" class="sm"</b> > Pequeno < /button > </br>
+          p.space.xs < button <b>class="ui"</b> > Padrão < /button > </br>
+          p.space.xs < button <b>class="ui" class="lg"</b> > Grande < /button > </br>
+          p.space.xs < button <b>class="ui" class="xl"</b> > Muito Grande < /button > </br>
 
+      section.breathe.xl
+        h3.space.top Ênfase
+        p Um botão pode ser formatado para mostrar diferentes níveis de ênfase.
+        .space
+          button.ui.lg.primary Salvar
+          button.ui.lg Cancelar
 
-  section.sector.breathe
-    .container
-      h2.centralized Typo
-      hr/
-      .sector.space.bg-grey.breathe.sm
-        h1 Heading 1 <small>small</small>
-        h2 Heading 2
-        h3 Heading 3
-        h4 Heading 4
-        h5 Heading 5
-        h6 Heading 6
-
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-      ul
-        li Teste
-        li Teste 2
-        li Teste 3
-
-      ol
-        li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-
-      dl
-        dt Palavra 1:
-        dd Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-        dt Palavra 2:
-        dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+        .explanation Definir as cores em variáveis permitirá que você use suas cores de tema para elementos de interface: primárias <b>$primary_color</b> | secundárias <b>$secondary_color</b>
+        h5.example-title Exemplo - código
+        .box-code
+          p.space.xs < button <b>class="ui" class="lg" class="primary"</b> > Salvar < /button > </br>
+          p.space.xs < button <b>class="ui" class="lg"</b> > Cancelar < /button > </br>
 
 
-      .sector.space.bg-grey.sm
-        abbr title='Yuri Gayzao' YG
-        b Bold
-        strong Strong
+  .sector.breathe
+    .section.container
+      h2.blue.subline Grid
+      section
+        h3.space.top Gadre / Colunas
+        p Divisão de grades e Colunas
+        .centralized
+          .space.row
+            .six.columns
+              .bg-grey coluna 1
+            .six.columns
+              .row.sm
+                .six.columns
+                  .bg-grey coluna 2
+                .six.columns
+                  .bg-grey coluna 3
+          .breathe
+          .row
+            .six.columns
+              .bg-grey coluna 1
+            .six.columns
+              .row.sm
+                .three.columns
+                  .bg-grey coluna 2
+                .three.columns
+                  .bg-grey coluna 3
+                .three.columns
+                  .bg-grey coluna 4
+                .three.columns
+                  .bg-grey coluna 5
 
-  section.sector.breathe
-    .container
-      h2.centralized Grid
-      hr/
-      .sector.space.sm.centralized
-        .row
-          .six.columns
-            .bg-grey col a
-          .six.columns
-            .row.sm
-              .six.columns
-                .bg-grey col b
-              .six.columns
-                .bg-grey col c
-        hr/
-        .row
-          .six.columns
-            .bg-grey a
-          .six.columns
-            .row.sm
-              .three.columns
-                .bg-grey col a
-              .three.columns
-                .bg-grey col b
-              .three.columns
-                .bg-grey col c
-              .three.columns
-                .bg-grey col d
+          .breathe
+          .row
+            .four.columns
+              .bg-grey coluna 1
+            .four.columns
+              .row.sm
+                .three.columns
+                  .bg-grey coluna 2
+                .three.columns
+                  .bg-grey coluna 3
+                .three.columns
+                  .bg-grey coluna 4
+                .three.columns
+                  .bg-grey coluna 5
+            .four.columns
+              .bg-grey coluna 6
+        .explanation As grids podem ajudar muito para divider em colunas, e o melhor são ajustáveis <b>responsive  |  mobile</b>
+        .h5.example-title Exemplo - código
+        .box-code
+          p.space.xs < div class="row" class="six columns" class="six columns" > < div class="row sm" class="six columns" class="six columns" > < /div >
+          p.space.xs < div class="row" class="six columns" class="six columns" > < div class="row sm" class="six columns" class="six columns" > < /div >
+          p.space.xs < div class="row" class="six columns" class="six columns" > < div class="row sm" class="six columns" class="six columns" > < /div >
 
-        hr/
-        .row
-          .four.columns
-            .bg-grey a
-          .four.columns
-            .row.sm
-              .three.columns
-                .bg-grey b
-              .three.columns
-                .bg-grey c
-              .three.columns
-                .bg-grey d
-              .three.columns
-                .bg-grey e
-          .four.columns
-            .bg-grey f
+
+
+  / .sector.breathe
+  /   .container
+  /     .topo.centralized
+  /       h2 Buttons
+  /     .small.centralized Artigo com modelos de botões.
+  /     hr/
+  /     .sector.space.breathe.sm
+  /       .row
+  /         .two.columns
+  /           button.ui.xs Mini
+  /         .two.columns
+  /           button.ui.small Peq
+  /         .two.columns
+  /           button.ui Padrão
+  /         .two.columns
+  /           button.ui.big Grande
+  /         .two.columns
+  /           button.ui.huge Gigante
+  /         .two.columns
+  /           button.ui.primary Cor 1
+  /           button.ui.secondary Cor 2
+  /
+  /         .button.animated
+  /           .visible ISSO DAQUI NO INICIO
+  /           .hidden ISSO DAQUI DEPOIS
+  /     .centralized
+  /       button.ui.hige teste
+  /
+  /
+  / section.sector.breathe
+  /   .container
+  /     h2.centralized Typo
+  /     hr/
+  /     .sector.space.bg-grey.breathe.sm
+  /       h1 Heading 1 <small>small</small>
+  /       h2 Heading 2
+  /       h3 Heading 3
+  /       h4 Heading 4
+  /       h5 Heading 5
+  /       h6 Heading 6
+  /
+  /     p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  /
+  /     ul
+  /       li Teste
+  /       li Teste 2
+  /       li Teste 3
+  /
+  /     ol
+  /       li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  /       li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  /       li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  /
+  /     dl
+  /       dt Palavra 1:
+  /       dd Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  /
+  /       dt Palavra 2:
+  /       dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+  /
+  /
+  /     .sector.space.bg-grey.sm
+  /       abbr title='Yuri Gayzao' YG
+  /       b Bold
+  /       strong Strong
