@@ -1,6 +1,35 @@
 @import '../colors';
 @import '../mixins';
 
+.labeled{
+  padding: 0;
+  width: auto;
+  overflow: hidden;
+  background-color: red;
+}
+.arrow_box {
+  width: auto;
+	position: relative;
+  padding: 10px 22px;
+	background: $blue_site;
+  border-radius: 4px;
+  color: $snow;
+  font-size: 1.2em;
+  text-align: center;
+}
+.arrow_box:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	border-right-color: $blue_site;
+	border-width: 15px;
+	margin-top: -15px;
+}
+
 button.ui, .button,{
   overflow: hidden;
   padding: 10px 22px;
@@ -47,7 +76,6 @@ button.ui, .button,{
   &:active {
     background-color: lighten($carbon, 10%);
   }
-
 }
 
 .button{
@@ -61,6 +89,7 @@ button.ui, .button,{
   &:hover{
     .hidden{
       display: inline-block;
+      width: 100%;
     }
     .visible{
       display: none;

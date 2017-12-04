@@ -80,3 +80,5 @@ gem 'pry-rails'
 gem 'pry-byebug'
 gem 'slim-rails'
 gem 'pinkman', '~> 0.9'
+
+gem 'font-awesome-sass'
