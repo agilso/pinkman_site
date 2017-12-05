@@ -18,7 +18,8 @@
  *= require ./pink_css/lists
  *= require ./pink_css/sector
  *= require ./pink_css/typo
-  *= require ./pink_css/margins
+*= require ./pink_css/margins
+*= require ./pink_css/loaders
  *= require_tree ./main/
  *= require_self
  */
