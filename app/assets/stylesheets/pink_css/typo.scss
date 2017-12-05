@@ -45,6 +45,13 @@ h4{
 
 h5{
   font-size: 1.5em;
+  &.bullet{
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+    color: $snow;
+    padding: 15px 22px;
+  }
 }
 
 h6{
