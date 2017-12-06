@@ -6,35 +6,8 @@
 
 // _____________________________YURI
 
-.bg-white{
-  background-color: #fff;
-}
-.bg-snow{
-  background-color: $snow;
-}
-.bg-light-grey{
-  background-color: $light_grey;
-}
-.bg-medium-grey{
-  background-color: $medium_grey;
-}
-.bg-blue-site{
-  background-color: $blue_site;
-}
-.bg-carbon{
-  background-color: $carbon;
-}
-.bg-sucess{
-  background-color: $sucess;
-}
-.bg-warning{
-  background-color: $warning;
-}
-.bg-danger{
-  background-color: $danger;
-}
-
 .circle{
+  display: inline-block;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -42,6 +15,7 @@
   text-align: center;
   color: $snow;
 }
+
 .flex-centralized {
   display: flex;
   justify-content: center;
@@ -76,3 +50,5 @@
   color: $carbon;
   height: auto;
 }
+
+

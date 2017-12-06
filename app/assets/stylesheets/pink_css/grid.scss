@@ -112,29 +112,3 @@ and (max-width : 1280px) {
     }
   }
 }
-
-
-
-
-//
-//
-// @media only screen
-// and (min-width : 761px)
-// and (max-width : 1300px) {
-//   .row{
-//     .one.column, .one.columns, .two.columns, .three.columns, .four.columns, .five.columns, .six.columns, .seven.columns, .eight.columns, .nine.columns, .ten.columns, .eleven.columns, .twelve.columns{
-//       width: percentage(1/2);
-//       padding: 0 30px;
-//     }
-//     .six.columns.left, .six.columns.right{
-//       width: percentage(6/12);
-//     }
-//   }
-// }
-
-// col-xs-[1-12] apply to window width smaller than or equal to 480px.
-// col-sm-[1-12] apply to window width smaller than or equal to 600px.
-// col-md-[1-12] apply to window width smaller than or equal to 840px.
-// col-lg-[1-12] apply to window width smaller than or equal to 960px.
-// col-xl-[1-12] apply to window width smaller than or equal to 1280px.
-// col-[1-12] apply to all window width, including the width wider than 1280px.
