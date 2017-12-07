@@ -1,5 +1,5 @@
 = template 'home' do
-
+  
   article
     .sector.breathe-xhg.bg-black.white
       .container
@@ -10,6 +10,28 @@
   
     
     .sector.bg-white
+    
+      = to_do 'Formulário com autocomplete'
+      = to_do 'Esquema de abas'
+      = to_do 'Esquema de panels do spectre (vertical 100%?)'
+      = to_do 'tabs (abas) verticais tipo o gumby'
+      = to_do 'bolinha de notificação em cima do texto (spectre badges)'
+      = to_do 'steps: passo a passo'
+      = to_do 'tooltip'
+      = to_do 'popover'
+      = to_do 'Framez + Modal'
+      = to_do 'menus pre-formatados'
+      = to_do 'card (trabalhando em conjunto com portfolio)'
+      = to_do 'lista breadcrumb'
+      = to_do 'icones'
+      = to_do 'animações de transição'
+      = to_do 'page_loading'
+      = to_do 'table-scroll'
+      = to_do 'block_quote'
+      = to_do 'menu/div que se afixa no topo (quando ele passa ali)'
+      = to_do 'esconder menu fixo quando rola para baixo (tipo android)'
+      = to_do 'Formulários: select, radio, check, on/off'
+      = to_do 'Mensagens de notifcação: error, info, sucess'
       section
         .container
         
@@ -512,8 +534,35 @@
           .centralized.breathe
             .big Você pode escolher a cor de qualquer tag!
             .medium.space-xs Tabelas, forms, listas, etc
-/ 
-/ 
+    
+    .sector.breathe-xhg.bg-black.white
+      section.container
+        h2.centralized.xhg.upcase Abas
+        = to_do 'fazer parallax lindão com o fundo se mexendo'
+    
+    .sector.bg-light.text-color
+      .container
+        section.breathe-xhg
+          h3.hg Parallax
+          .md Exemplos de uso
+          .example
+            .breathe-sm.bg-black.white Cor do texto: classe <b>[cor]</b>.
+            
+            .container.space            
+              p Você pode <span class='green'>marcar</span> <em class='red'>qualquer tag</em> com a classe <b class='primary'>nome-da-cor</b>.
+              hr/
+              = markdown_partial 'colors_text_example'
+              
+          .example
+            .breathe-sm.bg-black.white Cor do fundo: classe <b>bg-[cor]</b>.
+            .container.space
+              p E mudar a  <span class='bg-green white'>cor</span> do fundo é igualmente <span class='bg-black white'>fácil</span>. 
+              hr/  
+              = markdown_partial 'colors_bg_example'
+              
+          .centralized.breathe
+            .big Você pode escolher a cor de qualquer tag!
+            .medium.space-xs Tabelas, forms, listas, etc
 / 
 / 
 / 
