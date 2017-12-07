@@ -2,16 +2,19 @@ doctype html
 html
   head
     / script src = "https: //. use.fontawesome com / 801f4341ff.js"
-    link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet"
+    
+    
     title Pinkman
     / meta name="keywords" content="template language"
     / meta name="author" content=author
     == csrf_meta_tags
 
     == stylesheet_link_tag    'application', media: 'all'
-    == javascript_include_tag 'application'
+    link href="https://fonts.googleapis.com/css?family=Muli:300,400,400i,600,600i,700,700i,900,900i|Oswald:400,700" rel="stylesheet"
+    
 
   body
     #content-area = yield
 
+  == javascript_include_tag 'application'
   = load_templates

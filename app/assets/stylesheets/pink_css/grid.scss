@@ -23,6 +23,12 @@
 
 }
 
+.row .row{
+	.column,.columns{
+		padding: 0;
+	}
+}
+
 .row{
   .one{
   	width: percentage(1/12);

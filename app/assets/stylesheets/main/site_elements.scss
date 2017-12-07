@@ -6,14 +6,21 @@
 
 // _____________________________YURI
 
-.circle{
+.circle, .circle-sm{
   display: inline-block;
-  width: 100px;
-  height: 100px;
   border-radius: 50%;
   margin: 20px;
   text-align: center;
-  color: $snow;
+}
+
+.circle{
+  width: 100px;
+  height: 100px;
+}
+
+.circle-sm{
+    width: 40px;
+    height: 40px;
 }
 
 .flex-centralized {
@@ -51,4 +58,16 @@
   height: auto;
 }
 
+.example{
+  overflow: hidden;
+  border-radius: 5px;
+  margin: 30px auto;
+  padding: 0;
+  border: 1px solid $line_color_light;
+  background-color: lighten($bg_light,6%) !important;
+  // background-color: $white;
+  p{
+    margin: 0;
+  }
+}
 

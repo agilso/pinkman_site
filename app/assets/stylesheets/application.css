@@ -25,6 +25,7 @@
 *= require ./pink_css/loaders
 *= require ./pink_css/portfolio
 *= require ./pink_css/imgs
+*= require ./pink_css/pygments
 *= require_tree ./main/
 *= require_self
 */

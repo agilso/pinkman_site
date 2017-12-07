@@ -1,16 +1,16 @@
-$primary_color: #3191F7;
-$secondary_color: #5B616A;
+$primary_color: #EC3680;
+$secondary_color: #321A54;
 $text_color: #444;
 $text_color_light: #999;
 $text_color_dark: #111;
 $bg_light: #ddd;
 $bg_dark: #222;
-$error_color: #e23b42;
 
-$line_color_light: lighten($bg_light,2%);
-$line_color_dark: lighten($bg_dark,50%);
+$line_color_light: darken($bg_light,10%);
+$line_color_dark: lighten($bg_dark,10%);
 $line_color: $line_color_light;
 
+$error_color: #e23b42;
 
 // ----- Alias
 $primary: $primary_color;
@@ -27,7 +27,7 @@ $snow: #FCF7F8;
 $light_grey: #CED3DC;
 $medium_grey: #ABA9C3;
 $blue_site: #3191F7;
-$carbon: #5B616A;
+$carbon: #414448;
 
 
 // New Colors

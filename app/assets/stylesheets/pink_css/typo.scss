@@ -3,7 +3,7 @@
 
 html, body{
   font-size: $default_font_size;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Muli', sans-serif;
 }
 
 .centralized, .center{
@@ -11,6 +11,7 @@ html, body{
 }
 
 h1,h2,h3,h4,h5,h6{
+  font-family: 'Oswald', sans-serif;
 }
 
 
@@ -91,4 +92,8 @@ p{
 
 .line-through, .strike{
   text-decoration: line-through;
+}
+
+.upcase{
+  text-transform: uppercase;
 }

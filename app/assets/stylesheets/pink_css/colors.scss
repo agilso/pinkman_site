@@ -15,6 +15,9 @@ html, body{
 
 // ------------ Text
 
+.text-color{
+  color: $text_color;
+}
 .text-light { color: $text_color_light; }
 .text-dark { color: $text_color_dark;  }
 
@@ -47,6 +50,7 @@ html, body{
 .bg-text-light { background-color: $text_color_light; }
 .bg-text-dark { background-color: $text_color_dark;  }
 
+.bg-carbon { background-color: $carbon;  }
 
 .bg-primary { background-color: $primary_color; }
 .bg-secondary { background-color: $secondary_color; }
@@ -69,6 +73,10 @@ html, body{
 .bg-white { background-color: $white; }
 
 // ------------ Lines && Borders
+
+.border-light { border-color: $line_color_light; }
+.border-dark { border-color: $line_color_dark;  }
+
 
 .border-primary {border-color: $primary_color !important; }
 .border-secondary {border-color: $secondary_color !important; }

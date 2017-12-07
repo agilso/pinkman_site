@@ -82,3 +82,7 @@ gem 'slim-rails'
 gem 'pinkman', '~> 0.9'
 
 gem 'font-awesome-sass'
+
+gem 'redcarpet', '~> 3.4'
+gem 'rouge', '~> 2.1'
+gem 'pygments.rb', '~> 1.1'
