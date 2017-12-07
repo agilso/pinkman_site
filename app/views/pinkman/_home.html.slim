@@ -14,9 +14,9 @@
         .container
         
           h2.xhg.centralized.upcase.space-xl Cores
-            
+        
           section.space-xl.centralized
-            h3 Cores Customizáveis.
+            h3.primary Cores Customizáveis.
             .space
               .medium Você escolhe sua palheta de cores e o <b>Pinkman</b> faz o resto pra <b class='primary'>você.</b>
             .portfolio.four-per-row
@@ -32,9 +32,9 @@
               .wrapper
                 .circle-sm.bg
                 .medium Fundo    
-
-          section.centralized.space-xhg
-            h3 Cores Geradas
+          hr/
+          section.space-xl.centralized
+            h3.primary Cores Geradas
             .portfolio.six-per-row.space-lg
               .wrapper
                 .circle-sm.bg-primary
@@ -72,10 +72,9 @@
               .wrapper
                 .circle-sm.bg
                 .sm Fundo Escuro
-      
-          
-          section.space-xhg.centralized
-            h3 Paleta de Cores
+          hr/
+          section.space-xl.centralized
+            h3.primary Paleta de Cores
             .portfolio.eight-per-row.space-lg
               .wrapper
                 .circle-sm.bg-navy
@@ -155,7 +154,7 @@
         h2.xhg.centralized.upcase Botões
         .container
           section
-            h3
+            h3.primary
     .sector.bg-light.text-color
       .container
         section.breathe-xhg
@@ -184,7 +183,7 @@
       section.container
         h2.centralized.xhg.upcase Tabelas
         section
-          h3
+          h3.primary
           .feature
             p Tabela Normal
             table.ui
@@ -237,7 +236,7 @@
             p 
               b Tabela Colorida:
               span Você pode colorir as tabelas à vontade
-              table.ui
+              table.ui.borderless
                 thead
                   tr.bg-black.white
                     th Coluna 1
@@ -247,19 +246,19 @@
                 tbody
                   tr
                     td.purple Eu sou roxo!
-                    td.bg-grey Eu sou rebelde
+                    td Linha 1
                     td Linha 1
                     td Linha 1
                   tr
-                    td Linha 1
+                    td.bg-grey Rebelde
                     td.b.red Especial
-                    td Linha 1
+                    td Linha 2
                     td.green Eu sou verde!
                   tr
-                    td Linha 1
+                    td Linha 3
                     td.yellow.bg-black.b Black friday?
-                    td Linha 1
-                    td Linha 1
+                    td Linha 3
+                    td Linha 3
           .code-box
     .sector.bg-light.text-color
       .container
@@ -289,10 +288,10 @@
       section.container
         h2.xhg.centralized.upcase Formulários
         section
-          h3
+          h3.primary
         
         section
-          h3 Formulário Normal
+          h3.primary Formulário Normal
           
           form            
             .form-field
@@ -335,7 +334,7 @@
         = to_do 'Lista dentro de lista?'
         
         section
-          h3 Lista Não Ordenada (ul)
+          h3.primary Lista Não Ordenada (ul)
           p Lista normal
           ul.ui
             - 5.times
@@ -350,12 +349,12 @@
             - 5.times
               li = Faker::StarWars.character
         section
-          h3 Lista Ordenada (ol)
+          h3.primary Lista Ordenada (ol)
           ol.ui
             - 5.times
               li = Faker::StarWars.character
         section
-          h3 Lista de Definição (dl)
+          h3.primary Lista de Definição (dl)
           dl.ui
             dt Palavra
             dd Aqui você escreve o significado, larazentis.
@@ -523,7 +522,7 @@
 /   section.container
 /     h2.blue.subline Cores
 /     section
-/       h3.space.top Paleta de cores
+/       h3.primary.space.top Paleta de cores
 /       p Escolha uma paleta de cores para auxilinar em seu projeto
 /       .container.flex-centralized
 /         .circle-sm.bg-snow
