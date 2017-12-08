@@ -1,5 +1,5 @@
 = template 'home' do
-  
+
   article
     .sector.breathe-xhg.bg-black.white
       .container
@@ -7,10 +7,10 @@
           h1.xl.upcase Pinkman <span class='primary'>CSS</span>
           .medium.b.space-xs.primary Simples. Rápido. Flexível. <span class='white'>Poderoso.</span>
           .sm CSS Bootstrap & Framework
-  
-    
+
+
     .sector.bg-white
-    
+
       = to_do 'Formulário com autocomplete'
       = to_do 'Esquema de abas'
       = to_do 'Esquema de panels do spectre (vertical 100%?)'
@@ -32,11 +32,13 @@
       = to_do 'esconder menu fixo quando rola para baixo (tipo android)'
       = to_do 'Formulários: select, radio, check, on/off'
       = to_do 'Mensagens de notifcação: error, info, sucess'
+      = to_do 'calendario date picker'
+      = to_do 'color picker'
       section
         .container
-        
+
           h2.xhg.centralized.upcase.space-xl Cores
-        
+
           section.space-xl.centralized
             h3.primary Cores Customizáveis.
             .space
@@ -53,7 +55,7 @@
                 .medium Texto
               .wrapper
                 .circle-sm.bg
-                .medium Fundo    
+                .medium Fundo
           hr/
           section.space-xl.centralized
             h3.primary Cores Geradas
@@ -153,27 +155,51 @@
               .md Exemplos de uso
               .example
                 .breathe-sm.bg-black.white Cor do texto: classe <b>[cor]</b>.
-                
-                .container.space            
+
+                .container.space
                   p Você pode <span class='green'>marcar</span> <em class='red'>qualquer tag</em> com a classe <b class='primary'>nome-da-cor</b>.
                   hr/
                   = markdown_partial 'colors_text_example'
-                  
+
               .example
                 .breathe-sm.bg-black.white Cor do fundo: classe <b>bg-[cor]</b>.
                 .container.space
-                  p E mudar a  <span class='bg-green white'>cor</span> do fundo é igualmente <span class='bg-black white'>fácil</span>. 
-                  hr/  
+                  p E mudar a  <span class='bg-green white'>cor</span> do fundo é igualmente <span class='bg-black white'>fácil</span>.
+                  hr/
                   = markdown_partial 'colors_bg_example'
-                  
+
               .centralized.breathe
                 .big Você pode escolher a cor de qualquer tag!
                 .medium.space-xs Tabelas, forms, listas, etc
-              
-      
+
+
     .sector.breathe-xhg.bg-black.white
       section
         h2.xhg.centralized.upcase Botões
+
+        section.space-xl.centralized
+          .container
+            h3.primary Diversos tamanhos
+            .space
+              .medium Você pode escolher o melhor <b class='upcase'>tamanho</b> para o seu botão.
+              .space-xl
+                button.ui.xs.bg-primary.white Padrão
+                button.ui.sm.bg-primary.white Padrão
+                button.ui.lg.bg-primary.white Padrão
+                button.ui.xl.bg-primary.white Padrão
+                button.ui.hg.bg-primary.white Padrão
+                button.ui.xhg.bg-primary.white Padrão
+                hr/
+                h3.primary Diversos tamanhos
+                .space
+                .medium Você pode escolher o melhor <b class='upcase'>tamanho</b> para o seu botão.
+                .space-xl
+                button.ui.xs.bg-primary.white Padrão
+                button.ui.sm.bg-primary.white Padrão
+                button.ui.lg.bg-primary.white Padrão
+                button.ui.xl.bg-primary.white Padrão
+                button.ui.hg.bg-primary.white Padrão
+                button.ui.xhg.bg-primary.white Padrão
         .container
           section
             h3.primary
@@ -184,23 +210,23 @@
           .md Exemplos de uso
           .example
             .breathe-sm.bg-black.white Cor do texto: classe <b>[cor]</b>.
-            
-            .container.space            
+
+            .container.space
               p Você pode <span class='green'>marcar</span> <em class='red'>qualquer tag</em> com a classe <b class='primary'>nome-da-cor</b>.
               hr/
               = markdown_partial 'colors_text_example'
-              
+
           .example
             .breathe-sm.bg-black.white Cor do fundo: classe <b>bg-[cor]</b>.
             .container.space
-              p E mudar a  <span class='bg-green white'>cor</span> do fundo é igualmente <span class='bg-black white'>fácil</span>. 
-              hr/  
+              p E mudar a  <span class='bg-green white'>cor</span> do fundo é igualmente <span class='bg-black white'>fácil</span>.
+              hr/
               = markdown_partial 'colors_bg_example'
-              
+
           .centralized.breathe
             .big Você pode escolher a cor de qualquer tag!
             .medium.space-xs Tabelas, forms, listas, etc
-    
+
     .sector.breathe-xhg
       section.container
         h2.centralized.xhg.upcase Tabelas
@@ -254,8 +280,8 @@
                     td Linha #{i}
                     td Linha #{i}
                     td Linha #{i}
-            
-            p 
+
+            p
               b Tabela Colorida:
               span Você pode colorir as tabelas à vontade
               table.ui.borderless
@@ -289,38 +315,38 @@
           .md Exemplos de uso
           .example
             .breathe-sm.bg-black.white Cor do texto: classe <b>[cor]</b>.
-            
-            .container.space            
+
+            .container.space
               p Você pode <span class='green'>marcar</span> <em class='red'>qualquer tag</em> com a classe <b class='primary'>nome-da-cor</b>.
               hr/
               = markdown_partial 'colors_text_example'
-              
+
           .example
             .breathe-sm.bg-black.white Cor do fundo: classe <b>bg-[cor]</b>.
             .container.space
-              p E mudar a  <span class='bg-green white'>cor</span> do fundo é igualmente <span class='bg-black white'>fácil</span>. 
-              hr/  
+              p E mudar a  <span class='bg-green white'>cor</span> do fundo é igualmente <span class='bg-black white'>fácil</span>.
+              hr/
               = markdown_partial 'colors_bg_example'
-              
+
           .centralized.breathe
             .big Você pode escolher a cor de qualquer tag!
-            .medium.space-xs Tabelas, forms, listas, etc      
-    
+            .medium.space-xs Tabelas, forms, listas, etc
+
     .sector.breathe-xhg.centralized.bg-black.white
       section.container
         h2.xhg.centralized.upcase Formulários
         section
           h3.primary
-        
+
         section
           h3.primary Formulário Normal
-          
-          form            
+
+          form
             .form-field
               label.primary for='name' Campo 1
               input name='name' type='text'
               .info Descrição do campo acima. Formato: <b>mm/aaaa</b>
-              
+
             .form-field
               label.primary for='name' Campo 2
               input name='name' type='text'
@@ -331,30 +357,30 @@
           .md Exemplos de uso
           .example
             .breathe-sm.bg-black.white Cor do texto: classe <b>[cor]</b>.
-            
-            .container.space            
+
+            .container.space
               p Você pode <span class='green'>marcar</span> <em class='red'>qualquer tag</em> com a classe <b class='primary'>nome-da-cor</b>.
               hr/
               = markdown_partial 'colors_text_example'
-              
+
           .example
             .breathe-sm.bg-black.white Cor do fundo: classe <b>bg-[cor]</b>.
             .container.space
-              p E mudar a  <span class='bg-green white'>cor</span> do fundo é igualmente <span class='bg-black white'>fácil</span>. 
-              hr/  
+              p E mudar a  <span class='bg-green white'>cor</span> do fundo é igualmente <span class='bg-black white'>fácil</span>.
+              hr/
               = markdown_partial 'colors_bg_example'
-              
+
           .centralized.breathe
             .big Você pode escolher a cor de qualquer tag!
             .medium.space-xs Tabelas, forms, listas, etc
-    
+
     .sector.breathe-xhg
       section.container
         h2.centralized.xhg.upcase Listas
         = to_do 'Zebra?'
         = to_do 'Estrelinha, chevron, setas, etc.'
         = to_do 'Lista dentro de lista?'
-        
+
         section
           h3.primary Lista Não Ordenada (ul)
           p Lista normal
@@ -366,7 +392,7 @@
           ul.ui.ul-square
             - 5.times
               li.li-chevron = Faker::StarWars.character
-          
+
           ul.ui.ul-circle
             - 5.times
               li = Faker::StarWars.character
@@ -380,10 +406,10 @@
           dl.ui
             dt Palavra
             dd Aqui você escreve o significado, larazentis.
-            
+
             dt = Faker::StarWars.character
             dd = Faker::Lorem.sentence(10)
-    
+
     .sector.bg-light.text-color
       .container
         section.breathe-xhg
@@ -391,23 +417,23 @@
           .md Exemplos de uso
           .example
             .breathe-sm.bg-black.white Cor do texto: classe <b>[cor]</b>.
-            
-            .container.space            
+
+            .container.space
               p Você pode <span class='green'>marcar</span> <em class='red'>qualquer tag</em> com a classe <b class='primary'>nome-da-cor</b>.
               hr/
               = markdown_partial 'colors_text_example'
-              
+
           .example
             .breathe-sm.bg-black.white Cor do fundo: classe <b>bg-[cor]</b>.
             .container.space
-              p E mudar a  <span class='bg-green white'>cor</span> do fundo é igualmente <span class='bg-black white'>fácil</span>. 
-              hr/  
+              p E mudar a  <span class='bg-green white'>cor</span> do fundo é igualmente <span class='bg-black white'>fácil</span>.
+              hr/
               = markdown_partial 'colors_bg_example'
-              
+
           .centralized.breathe
             .big Você pode escolher a cor de qualquer tag!
             .medium.space-xs Tabelas, forms, listas, etc
-    
+
     .sector.breathe-xhg.bg-black.white
       section.container
         h2.center.xhg Portfolio
@@ -415,12 +441,12 @@
           - 20.times
             .wrapper
               div.breathe-hg.bsbb.centralized class=cycle([*'bg-gray', 'bg-silver','bg-white'])
-        
+
         .portfolio.two-per-row.space-xl
           - 4.times
             .wrapper.breathe-h.breathe-xs
               img.fit src='https://images.unsplash.com/photo-1507290439931-a861b5a38200?auto=format&fit=crop&w=1490&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D' alt='portfolio'
-              
+
               .space-xs
                 b.md = Faker::Simpsons.character
                 p = Faker::Lorem.sentence(10)
@@ -432,27 +458,27 @@
           .md Exemplos de uso
           .example
             .breathe-sm.bg-black.white Cor do texto: classe <b>[cor]</b>.
-            
-            .container.space            
+
+            .container.space
               p Você pode <span class='green'>marcar</span> <em class='red'>qualquer tag</em> com a classe <b class='primary'>nome-da-cor</b>.
               hr/
               = markdown_partial 'colors_text_example'
-              
+
           .example
             .breathe-sm.bg-black.white Cor do fundo: classe <b>bg-[cor]</b>.
             .container.space
-              p E mudar a  <span class='bg-green white'>cor</span> do fundo é igualmente <span class='bg-black white'>fácil</span>. 
-              hr/  
+              p E mudar a  <span class='bg-green white'>cor</span> do fundo é igualmente <span class='bg-black white'>fácil</span>.
+              hr/
               = markdown_partial 'colors_bg_example'
-              
+
           .centralized.breathe
             .big Você pode escolher a cor de qualquer tag!
             .medium.space-xs Tabelas, forms, listas, etc
-              
+
     .sector.breathe-xhg
       section.container
         h2.centralized.xhg.upcase Grade
-    
+
     .sector.bg-light.text-color
       .container
         section.breathe-xhg
@@ -460,28 +486,28 @@
           .md Exemplos de uso
           .example
             .breathe-sm.bg-black.white Cor do texto: classe <b>[cor]</b>.
-            
-            .container.space            
+
+            .container.space
               p Você pode <span class='green'>marcar</span> <em class='red'>qualquer tag</em> com a classe <b class='primary'>nome-da-cor</b>.
               hr/
               = markdown_partial 'colors_text_example'
-              
+
           .example
             .breathe-sm.bg-black.white Cor do fundo: classe <b>bg-[cor]</b>.
             .container.space
-              p E mudar a  <span class='bg-green white'>cor</span> do fundo é igualmente <span class='bg-black white'>fácil</span>. 
-              hr/  
+              p E mudar a  <span class='bg-green white'>cor</span> do fundo é igualmente <span class='bg-black white'>fácil</span>.
+              hr/
               = markdown_partial 'colors_bg_example'
-              
+
           .centralized.breathe
             .big Você pode escolher a cor de qualquer tag!
             .medium.space-xs Tabelas, forms, listas, etc
-    
+
     .sector.breathe-xhg.bg-black.white
       section.container
         h2.centralized.xhg.upcase Parallax
         = to_do 'fazer parallax lindão com o fundo se mexendo'
-    
+
     .sector.bg-light.text-color
       .container
         section.breathe-xhg
@@ -489,28 +515,28 @@
           .md Exemplos de uso
           .example
             .breathe-sm.bg-black.white Cor do texto: classe <b>[cor]</b>.
-            
-            .container.space            
+
+            .container.space
               p Você pode <span class='green'>marcar</span> <em class='red'>qualquer tag</em> com a classe <b class='primary'>nome-da-cor</b>.
               hr/
               = markdown_partial 'colors_text_example'
-              
+
           .example
             .breathe-sm.bg-black.white Cor do fundo: classe <b>bg-[cor]</b>.
             .container.space
-              p E mudar a  <span class='bg-green white'>cor</span> do fundo é igualmente <span class='bg-black white'>fácil</span>. 
-              hr/  
+              p E mudar a  <span class='bg-green white'>cor</span> do fundo é igualmente <span class='bg-black white'>fácil</span>.
+              hr/
               = markdown_partial 'colors_bg_example'
-              
+
           .centralized.breathe
             .big Você pode escolher a cor de qualquer tag!
             .medium.space-xs Tabelas, forms, listas, etc
-            
+
     .sector.breathe-xhg
       section.container
         h2.centralized.xhg.upcase FIT
         = to_do 'image fit e video fit'
-    
+
     .sector.bg-light.text-color
       .container
         section.breathe-xhg
@@ -518,28 +544,28 @@
           .md Exemplos de uso
           .example
             .breathe-sm.bg-black.white Cor do texto: classe <b>[cor]</b>.
-            
-            .container.space            
+
+            .container.space
               p Você pode <span class='green'>marcar</span> <em class='red'>qualquer tag</em> com a classe <b class='primary'>nome-da-cor</b>.
               hr/
               = markdown_partial 'colors_text_example'
-              
+
           .example
             .breathe-sm.bg-black.white Cor do fundo: classe <b>bg-[cor]</b>.
             .container.space
-              p E mudar a  <span class='bg-green white'>cor</span> do fundo é igualmente <span class='bg-black white'>fácil</span>. 
-              hr/  
+              p E mudar a  <span class='bg-green white'>cor</span> do fundo é igualmente <span class='bg-black white'>fácil</span>.
+              hr/
               = markdown_partial 'colors_bg_example'
-              
+
           .centralized.breathe
             .big Você pode escolher a cor de qualquer tag!
             .medium.space-xs Tabelas, forms, listas, etc
-    
+
     .sector.breathe-xhg.bg-black.white
       section.container
         h2.centralized.xhg.upcase Abas
         = to_do 'fazer parallax lindão com o fundo se mexendo'
-    
+
     .sector.bg-light.text-color
       .container
         section.breathe-xhg
@@ -547,26 +573,26 @@
           .md Exemplos de uso
           .example
             .breathe-sm.bg-black.white Cor do texto: classe <b>[cor]</b>.
-            
-            .container.space            
+
+            .container.space
               p Você pode <span class='green'>marcar</span> <em class='red'>qualquer tag</em> com a classe <b class='primary'>nome-da-cor</b>.
               hr/
               = markdown_partial 'colors_text_example'
-              
+
           .example
             .breathe-sm.bg-black.white Cor do fundo: classe <b>bg-[cor]</b>.
             .container.space
-              p E mudar a  <span class='bg-green white'>cor</span> do fundo é igualmente <span class='bg-black white'>fácil</span>. 
-              hr/  
+              p E mudar a  <span class='bg-green white'>cor</span> do fundo é igualmente <span class='bg-black white'>fácil</span>.
+              hr/
               = markdown_partial 'colors_bg_example'
-              
+
           .centralized.breathe
             .big Você pode escolher a cor de qualquer tag!
             .medium.space-xs Tabelas, forms, listas, etc
-/ 
-/ 
-/ 
-/ 
+/
+/
+/
+/
 / .sector.breathe
 /   section.container
 /     h2.blue.subline Cores
@@ -587,7 +613,7 @@
 /         p.space-xs <b>$color3: #333333;</b> - .bg-color3{ background-color: $color3;} - < div class="bg-color3" > < /div > <br/>
 /         p.space-xs <b>$color4: #444444;</b> - .bg-color4{ background-color: $color4;} - < div class="bg-color4" > < /div > <br/>
 /         p.space-xs <b>$color5: #555555;</b> - .bg-color5{ background-color: $color5;} - < div class="bg-color5" > < /div > <br/>
-/ 
+/
 /     .section.breathe-xl
 /       h3.space.top Cores de alerta
 /       p Cores de alerta para auxiliar com informações.
@@ -601,7 +627,7 @@
 /         p.space-xs <b>$sucess: #2ecc71;</b> - .bg-sucess{ background-color: $sucess;} - < div class="bg-sucess" > < /div > <br/>
 /         p.space-xs <b>$warning: #f1c40f;</b> - .bg-warning{ background-color: $warning;} - < div class="bg-warning" > < /div > <br/>
 /         p.space-xs <b>$danger: #e74c3c;</b> - .bg-danger{ background-color: $danger;} - < div class="bg-danger" > < /div > <br/>
-/ 
+/
 / .sector.breathe
 /   section.container
 /     h2.blue.subline Botões
@@ -614,7 +640,7 @@
 /         button.ui Padrão
 /         button.ui.lg Grande
 /         button.ui.xl Muito Grande
-/ 
+/
 /       h5.example-title.bullet Exemplo - código
 /       .code-box
 /         p.space-xs.radius < button <b>class="ui" class="xs"</b> > Pititico < /button > </br>
@@ -622,20 +648,20 @@
 /         p.space-xs < button <b>class="ui"</b> > Padrão < /button > </br>
 /         p.space-xs < button <b>class="ui" class="lg"</b> > Grande < /button > </br>
 /         p.space-xs < button <b>class="ui" class="xl"</b> > Muito Grande < /button > </br>
-/ 
+/
 /     section.breathe-xl
 /       h3.space.top Ênfase
 /       p Um botão pode ser formatado para mostrar diferentes níveis de ênfase.
 /       .space
 /         button.ui.lg.primary Salvar
 /         button.ui.lg Cancelar
-/ 
+/
 /       .explanation Definir as cores em variáveis permitirá que você use suas cores de tema para elementos de interface: primárias <b>$primary_color</b> | secundárias <b>$secondary_color</b>
 /       h5.example-title.bullet Exemplo - código
 /       .code-box
 /         p.space-xs < button <b>class="ui" class="lg" class="primary"</b> > Salvar < /button > </br>
 /         p.space-xs < button <b>class="ui" class="lg"</b> > Cancelar < /button > </br>
-/ 
+/
 /     section.breathe-xl
 /       h3.space.top Labeled
 /       p Um botão pode ser formatado para mostrar diferentes níveis de ênfase.
@@ -703,7 +729,7 @@
 /       h5.example-title.bullet Exemplo - código
 /       .code-box
 /         p
-/ 
+/
 /     section.breathe-xl
 /       h3.space.top Buttons Group
 /       p Botões em grupo
@@ -734,7 +760,7 @@
 /       h5.example-title.bullet Exemplo - código
 /       .code-box
 /         p
-/ 
+/
 /     / section.breathe-xl
 /     /   h3.space.top Botão animado
 /     /   p Um botão pode ser animado para mostrar algum conteúdo oculto.
@@ -749,8 +775,8 @@
 /     /   .code-box
 /     /     p.space-xs < button <b>class="ui" class="lg" class="primary"</b> > Salvar < /button > </br>
 /     /     p.space-xs < button <b>class="ui" class="lg"</b> > Cancelar < /button > </br>
-/ 
-/ 
+/
+/
 / .sector.breathe
 /   .section.container
 /     h2.blue.subline Grid
@@ -781,7 +807,7 @@
 /                 .bg-grey coluna 4
 /               .three.columns
 /                 .bg-grey coluna 5
-/ 
+/
 /         .breathe
 /         .row
 /           .four.columns
@@ -804,9 +830,9 @@
 /         p.space-xs < div class="row" class="six columns" class="six columns" > < div class="row sm" class="six columns" class="six columns" > < /div >
 /         p.space-xs < div class="row" class="six columns" class="six columns" > < div class="row sm" class="six columns" class="six columns" > < /div >
 /         p.space-xs < div class="row" class="six columns" class="six columns" > < div class="row sm" class="six columns" class="six columns" > < /div >
-/ 
-/ 
-/ 
+/
+/
+/
 / / .sector.breathe
 / /   .container
 / /     .topo.centralized
