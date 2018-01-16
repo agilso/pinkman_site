@@ -10,22 +10,8 @@
 * files in this directory. Styles in this file should be added after the last require_* statement.
 * It is generally better to create a new file per style scope.
 *
-*= require ./pink_css/reset
-*= require ./pink_css/grid
-*= require ./pink_css/colors
-*= require ./pink_css/containers
-*= require ./pink_css/elements
-*= require ./pink_css/forms
-*= require ./pink_css/buttons
-*= require ./pink_css/tables
-*= require ./pink_css/lists
-*= require ./pink_css/sector
-*= require ./pink_css/typo
-*= require ./pink_css/margins
-*= require ./pink_css/loaders
-*= require ./pink_css/portfolio
-*= require ./pink_css/imgs
-*= require ./pink_css/pygments
+*= require pinkman
+*= require pygments
 *= require_tree ./main/
 *= require_self
 */

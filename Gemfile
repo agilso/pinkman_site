@@ -79,7 +79,7 @@ end
 gem 'pry-rails'
 gem 'pry-byebug'
 gem 'slim-rails'
-gem 'pinkman', '~> 0.9'
+gem 'pinkman', path: '~/arte/pinkman'
 
 gem 'font-awesome-sass'
 

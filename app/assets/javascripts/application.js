@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require pinkman_with_hogan
-//= require_tree ./pinkman/
+//= require my.pinkman.app
 //= require_tree ./main/
-//= require app.routes
+
